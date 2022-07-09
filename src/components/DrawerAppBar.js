@@ -68,11 +68,17 @@ function DrawerAppBar(props) {
           </Link>
         ))}
       </List>
-      <Box sx={{ marginTop: "5em" }}>
+      <Box sx={{ marginTop: "2em" }}>
         <div class="wrapper">
-          <i class="fa-brands fa-3x fa-facebook-square"></i>
-          <i class="fa-brands fa-3x fa-instagram-square"></i>
-          <i class="fa-brands fa-3x fa-vimeo-square"></i>
+          <a href="https://www.facebook.com/popstudiopage">
+            <i class="fa-brands fa-3x fa-facebook-square"></i>
+          </a>
+          <a href="https://www.instagram.com/viktorcicko/">
+            <i class="fa-brands fa-3x fa-instagram-square"></i>
+          </a>
+          <a href="https://vimeo.com/popstudio">
+            <i class="fa-brands fa-3x fa-vimeo-square"></i>
+          </a>
         </div>
       </Box>
     </Box>
