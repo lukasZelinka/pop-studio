@@ -20,7 +20,7 @@ import { theme } from "../App";
 
 // const drawerWidth = 240;
 const drawerWidth = "100%";
-const navItems = ["home", "about", "contact"];
+const navItems = ["home", "about", "videos", "photography", "magazine"];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -114,20 +114,19 @@ function DrawerAppBar(props) {
                 aria-label="open drawer"
                 edge="start"
                 onClick={handleDrawerToggle}
-                sx={{ mr: 2, display: { sm: "none" }, color: "black" }}
+                sx={{ mr: 2, display: { md: "none" }, color: "black" }}
               >
                 {/* <MenuIcon /> */}
                 <div style={{ height: "10vh", marginTop: "0.4em" }}>
                   <i class="fa-solid fa-bars"></i>
                 </div>
               </IconButton>
-              <p className="logoSmallerScreen">LOGO</p>
             </div>
             <div className="flexContainer2">
               <Typography
                 variant="h6"
                 component="div"
-                sx={{ display: { xs: "none", sm: "block" }, color: "black" }}
+                sx={{ display: { xs: "none", md: "block" }, color: "black" }}
               >
                 LOGO
               </Typography>
@@ -135,7 +134,7 @@ function DrawerAppBar(props) {
 
               <Box
                 sx={{
-                  display: { xs: "none", sm: "block" },
+                  display: { xs: "none", md: "block" },
                   marginTop: "1.2em",
                 }}
               >
@@ -146,7 +145,7 @@ function DrawerAppBar(props) {
                       sx={[
                         {
                           color: "#000",
-                          marginLeft: "2em",
+                          marginLeft: "1.2em",
                           padding: 0.1,
                           fontWeight: "400",
                           borderRadius: 0,
@@ -172,6 +171,7 @@ function DrawerAppBar(props) {
                 ))}
               </Box>
             </div>
+            <p className="logoSmallerScreen">LOGO</p>
           </Toolbar>
         </Container>
       </AppBar>

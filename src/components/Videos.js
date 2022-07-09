@@ -2,17 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container } from "@mui/material";
 
-class Contact extends React.Component {
+class Videos extends React.Component {
   render() {
     return (
-      <section id="contact">
+      <section id="home">
         <Container maxWidth="lg">
-          <p style={{ margin: 0 }}>contact</p>
-          <Link to="/">to home</Link>
+          <p style={{ margin: 0 }}>home</p>
+          <Link to="/about">to about</Link>
         </Container>
       </section>
     );
   }
 }
 
-export { Contact };
+export { Videos };

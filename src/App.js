@@ -4,7 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Error } from "./components/Error";
-import { Contact } from "./components/Contact";
+import { Videos } from "./components/Videos";
+import { Photography } from "./components/Photography";
+import { Magazine } from "./components/Magazine";
 import DrawerAppBar from "./components/DrawerAppBar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -33,7 +35,9 @@ class App extends React.Component {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
+            <Route path="photography" element={<Photography />} />
+            <Route path="videos" element={<Videos />} />
+            <Route path="magazine" element={<Magazine />} />
             <Route path="*" element={<Error />} />
           </Routes>
           <footer>footer</footer>

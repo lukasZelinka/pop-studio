@@ -22,6 +22,14 @@ a {
   width: 100%;
 
 }
+.flexContainer3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+
+}
+
 
 /*social icons */
 .wrapper {
@@ -99,7 +107,7 @@ i {
     width: 100%;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .logoSmallerScreen {
   display: none;
   }
