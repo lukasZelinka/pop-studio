@@ -8,7 +8,7 @@ class About extends React.Component {
       <section id="about">
         <Container maxWidth="lg">
           <p style={{ margin: 0 }}>about</p>
-          <Link to="/contact">to contact</Link>
+          <Link to="/photography">to photography</Link>
         </Container>
       </section>
     );

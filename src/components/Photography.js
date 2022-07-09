@@ -7,7 +7,7 @@ class Photography extends React.Component {
     return (
       <section id="contact">
         <Container maxWidth="lg">
-          <p style={{ margin: 0 }}>contact</p>
+          <p style={{ margin: 0 }}>photography</p>
           <Link to="/">to home</Link>
         </Container>
       </section>
