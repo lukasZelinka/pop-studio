@@ -167,7 +167,7 @@ function DrawerAppBar(props) {
                 <SocialIcons />
               </div>
               {/* linky */}
-              <div className="nav-center">
+              <div className="nav-center main-nav-links">
                 <Box
                   sx={{
                     display: { xs: "none", md: "block" },
@@ -208,7 +208,7 @@ function DrawerAppBar(props) {
                 </Box>
               </div>
             </div>
-            <p className="logoSmallerScreen nav-center">
+            <p className="logoSmallerScreen ">
               {" "}
               <a href="#home">
                 <img

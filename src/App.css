@@ -39,7 +39,14 @@ a {
 }
 .fa-bars {
   /* color:red; */
-  margin-top: 0.1em;
+  margin-top: 0.4em;
+}
+.main-nav-links {
+    margin-top: -0.8em;
+}
+.logoSmallerScreen {
+  margin-top: -0.3em;
+  margin-right: 0.3em;
 }
 
 
@@ -125,10 +132,7 @@ a {
   display: none;
   }
 }
-.logoSmallerScreen {
-  margin-top: 0.9em;
-  margin-right: 0.3em;
-}
+
 
 /* nav-layout-handling */
 @media screen and (max-width: 599.98px) {
