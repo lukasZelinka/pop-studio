@@ -93,6 +93,7 @@ function DrawerAppBar(props) {
       sx={{
         backgroundColor: "red",
         height: "5em",
+        // display: "flex",
       }}
     >
       <AppBar
@@ -108,10 +109,12 @@ function DrawerAppBar(props) {
       >
         <Container
           maxWidth="lg"
-          sx={{
-            // backgroundColor: "green",
-            marginTop: "0.5em",
-          }}
+          sx={
+            {
+              // backgroundColor: "green",
+              // marginTop: "0.5em",
+            }
+          }
         >
           <Toolbar disableGutters>
             <div className="flexContainer">
@@ -122,62 +125,99 @@ function DrawerAppBar(props) {
                 onClick={handleDrawerToggle}
                 sx={{ mr: 2, display: { md: "none" }, color: "black" }}
               >
-                {/* <MenuIcon /> */}
-                <div style={{ height: "10vh", marginTop: "0.4em" }}>
+                <div
+                  style={{
+                    height: "10vh",
+                    marginTop: "0.4em",
+                    marginLeft: "0.3em",
+                  }}
+                >
                   <i class="fa-solid fa-bars"></i>
                 </div>
               </IconButton>
             </div>
+            {/* FLEX BIG-SCREEN */}
             <div className="flexContainer2">
-              <Typography
-                variant="h6"
-                component="div"
-                sx={{ display: { xs: "none", md: "block" }, color: "black" }}
-              >
-                LOGO
-              </Typography>
-              <SocialIcons />
-
-              <Box
-                sx={{
-                  display: { xs: "none", md: "block" },
-                  marginTop: "1.2em",
-                }}
-              >
-                {navItems.map((item) => (
-                  <Link to={item === "home" ? "/" : `/${item}`}>
-                    <Button
-                      key={item}
-                      sx={[
-                        {
-                          color: "#000",
-                          marginLeft: "1.2em",
-                          padding: 0.1,
-                          fontWeight: "400",
-                          borderRadius: 0,
-                          transition: theme.transitions.create(
-                            ["all", "transform"],
-                            {
-                              duration: 1000,
-                              easing: theme.transitions.easing.sharp,
-                            }
-                          ),
-                        },
-                        {
-                          "&:hover": {
-                            color: "#fff",
-                            backgroundColor: "#000",
+              {/* logo */}
+              <div className="nav-center">
+                <Typography
+                  variant="h6"
+                  component="div"
+                  sx={{
+                    display: { xs: "none", md: "block" },
+                    color: "black",
+                    // backgroundColor: "orange",
+                    // height: "0px",
+                  }}
+                >
+                  <a href="#home">
+                    {/* <div className="k"> */}
+                    <img
+                      src="../logo192.png"
+                      alt="pop studio logo"
+                      width={"50px"}
+                      // style={"background-color: red"}
+                    />
+                    {/* </div> */}
+                  </a>
+                </Typography>
+              </div>
+              {/* ikony */}
+              <div className="nav-center">
+                <SocialIcons />
+              </div>
+              {/* linky */}
+              <div className="nav-center">
+                <Box
+                  sx={{
+                    display: { xs: "none", md: "block" },
+                    marginTop: "1.2em",
+                  }}
+                >
+                  {navItems.map((item) => (
+                    <Link to={item === "home" ? "/" : `/${item}`}>
+                      <Button
+                        key={item}
+                        sx={[
+                          {
+                            color: "#000",
+                            marginLeft: "1.2em",
+                            padding: 0.1,
+                            fontWeight: "400",
+                            borderRadius: 0,
+                            transition: theme.transitions.create(
+                              ["all", "transform"],
+                              {
+                                duration: 1000,
+                                easing: theme.transitions.easing.sharp,
+                              }
+                            ),
                           },
-                        },
-                      ]}
-                    >
-                      {item}
-                    </Button>
-                  </Link>
-                ))}
-              </Box>
+                          {
+                            "&:hover": {
+                              color: "#fff",
+                              backgroundColor: "#000",
+                            },
+                          },
+                        ]}
+                      >
+                        {item}
+                      </Button>
+                    </Link>
+                  ))}
+                </Box>
+              </div>
             </div>
-            <p className="logoSmallerScreen">LOGO</p>
+            <p className="logoSmallerScreen nav-center">
+              {" "}
+              <a href="#home">
+                <img
+                  src="../logo192.png"
+                  alt="pop studio logo"
+                  width={"50px"}
+                />
+              </a>
+            </p>
           </Toolbar>
         </Container>
       </AppBar>
