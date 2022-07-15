@@ -33,13 +33,13 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Box sx={{ my: 2, color: "red" }}>
-        <i class="fa-solid fa-2x fa-xmark"></i>
+        <i className="fa-solid fa-2x fa-xmark"></i>
       </Box>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <Link to={item === "home" ? "/" : `/${item}`}>
-            <ListItem key={item} disablePadding>
+          <Link key={item} to={item === "home" ? "/" : `/${item}`}>
+            <ListItem disablePadding>
               <ListItemButton
                 sx={[
                   {
@@ -69,15 +69,15 @@ function DrawerAppBar(props) {
         ))}
       </List>
       <Box sx={{ marginTop: "2em" }}>
-        <div class="wrapper">
+        <div className="wrapper">
           <a href="https://www.facebook.com/popstudiopage">
-            <i class="fa-brands fa-3x fa-facebook-square"></i>
+            <i className="fa-brands fa-3x fa-facebook-square"></i>
           </a>
           <a href="https://www.instagram.com/viktorcicko/">
-            <i class="fa-brands fa-3x fa-instagram-square"></i>
+            <i className="fa-brands fa-3x fa-instagram-square"></i>
           </a>
           <a href="https://vimeo.com/popstudio">
-            <i class="fa-brands fa-3x fa-vimeo-square"></i>
+            <i className="fa-brands fa-3x fa-vimeo-square"></i>
           </a>
         </div>
       </Box>
@@ -88,12 +88,10 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    // <Box sx={{ display: "flex", backgroundColor: "red", height: "5em" }}>
     <Box
       sx={{
         backgroundColor: "red",
         height: "5em",
-        // display: "flex",
       }}
     >
       <AppBar
@@ -101,7 +99,6 @@ function DrawerAppBar(props) {
         sx={{
           height: "5em",
           backgroundColor: "#FFF",
-          // backgroundColor: "blue",
           boxShadow: 0,
           borderBottom: 1,
           borderColor: "#bdbdbd",
@@ -128,46 +125,40 @@ function DrawerAppBar(props) {
                 <div
                   style={{
                     height: "10vh",
-                    marginTop: "0.4em",
                     marginLeft: "0.3em",
                   }}
                 >
-                  <i class="fa-solid fa-bars"></i>
+                  <i className="fa-solid fa-bars"></i>
                 </div>
               </IconButton>
             </div>
             {/* FLEX BIG-SCREEN */}
             <div className="flexContainer2">
               {/* logo */}
-              <div className="nav-center">
+              <div className="flex-nav-logo">
                 <Typography
                   variant="h6"
                   component="div"
                   sx={{
                     display: { xs: "none", md: "block" },
                     color: "black",
-                    // backgroundColor: "orange",
-                    // height: "0px",
                   }}
                 >
                   <a href="#home">
-                    {/* <div className="k"> */}
                     <img
                       src="../logo192.png"
                       alt="pop studio logo"
                       width={"50px"}
-                      // style={"background-color: red"}
                     />
-                    {/* </div> */}
                   </a>
                 </Typography>
               </div>
               {/* ikony */}
-              <div className="nav-center">
+              <div className="flex-nav-icons">
                 <SocialIcons />
               </div>
               {/* linky */}
-              <div className="nav-center main-nav-links">
+              <div className="flex-nav-links">
                 <Box
                   sx={{
                     display: { xs: "none", md: "block" },
@@ -175,9 +166,8 @@ function DrawerAppBar(props) {
                   }}
                 >
                   {navItems.map((item) => (
-                    <Link to={item === "home" ? "/" : `/${item}`}>
+                    <Link key={item} to={item === "home" ? "/" : `/${item}`}>
                       <Button
-                        key={item}
                         sx={[
                           {
                             color: "#000",
