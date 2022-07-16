@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container } from "@mui/material";
+import { Slider } from "./Slider/Slider";
 
 class Home extends React.Component {
   render() {
     return (
       <section id="home">
         <Container maxWidth="lg">
-          <p style={{ margin: 0 }}>home</p>
-          <Link to="/about">to about</Link>
+          <Slider />
         </Container>
       </section>
     );
