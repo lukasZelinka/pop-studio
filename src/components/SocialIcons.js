@@ -7,14 +7,14 @@ class SocialIcons extends React.Component {
     return (
       <Box sx={{ width: "10vw", display: { xs: "none", md: "block" } }}>
         <div className="wrapper">
-          <a href="https://www.facebook.com/popstudiopage">
-            <i className="fa-brands fa-3x fa-facebook-square"></i>
-          </a>
-          <a href="https://www.instagram.com/viktorcicko/">
-            <i className="fa-brands fa-3x fa-instagram-square"></i>
+          <a href="https://www.instagram.com/pop.studio/">
+            <i class="fa-brands fa-instagram"></i>
           </a>
           <a href="https://vimeo.com/popstudio">
-            <i className="fa-brands fa-3x fa-vimeo-square"></i>
+            <i class="fa-brands fa-vimeo-v"></i>
+          </a>
+          <a href="https://www.facebook.com/popstudiopage">
+            <i class="fa-brands fa-facebook-f"></i>
           </a>
         </div>
       </Box>
