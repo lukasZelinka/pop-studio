@@ -100,8 +100,6 @@ function DrawerAppBar(props) {
           height: "5em",
           backgroundColor: "#FFF",
           boxShadow: 0,
-          borderBottom: 1,
-          borderColor: "#bdbdbd",
         }}
       >
         <Container
