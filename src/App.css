@@ -17,6 +17,9 @@ a {
 /* APPBAR */
 
 
+#root>div>nav.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionFixed.mui-fixed.css-bt72gw-MuiPaper-root-MuiAppBar-root {
+  border-bottom: none;
+}
 
 /* centering nav elements */
 .flexContainer2 {
