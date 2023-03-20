@@ -13,7 +13,6 @@ a {
  
 }
 /* APPBAR */
-
 /* centering nav elements */
 .flexContainer2 {
   display: flex;
@@ -22,7 +21,6 @@ a {
   align-items: baseline;
   width: 100%;
   height: 80px;
-  
 }
 .flex-nav-logo {
   align-self: center;
@@ -47,7 +45,6 @@ a {
   margin-top: 0.9em;
   margin-right: 0.3em;
 }
-
 /*social icons */
 .wrapper {
   display: inline-flex;
@@ -58,44 +55,36 @@ a {
   height: 10vh;
   margin-top: -9px;
 }
-
 .wrapper > a{
   padding: 0px 10px;
 }
-
 .wrapper a:nth-child(1) {
   color: #999494;
   cursor: pointer;
   transition: all ease-in-out 150ms;
 }
-
 .wrapper a:nth-child(1):hover {
   margin-top: -10px;
   transform: translate(0, -8);
 }
-
 .wrapper a:nth-child(2) {
   color: #999494;
   cursor: pointer;
   transition: all ease-in-out 150ms;
 }
-
 .wrapper a:nth-child(2):hover {
   margin-top: -10px;
   transform: translate(0, -8);
 }
-
 .wrapper a:nth-child(3) {
   color: #999494;
   cursor: pointer;
   transition: all ease-in-out 150ms;
 }
-
 .wrapper a:nth-child(3):hover {
   margin-top: -10px;
   transform: translate(0, -5);
 }
-
 /* logo handling - smaller/bigger screen */
 @media screen and (max-width: 599.98px) {
 .flexContainer {
@@ -109,7 +98,6 @@ a {
   display: none;
   }
 }
-
 /* nav-layout-handling */
 @media screen and (max-width: 599.98px) {
 .css-k008qs {
@@ -121,21 +109,18 @@ a {
     height: 4em
   }
 }
-
 /* HOME */
 #home {
   background-color: #fff;
   height: 90vh;
 }
-
-.videoSection {
+#videoWrapper {
   position: relative;
   width: 100%;
   height: 80vh;
   margin-top: 1em;
 }
-
-.videoSection video {
+#videoWrapper video {
   position: absolute;
   top: 0;
   left: 0;
@@ -143,21 +128,27 @@ a {
   height: 100%;
   object-fit: cover;
 }
-
+/* handtuchova video for mobile */
+@media screen and (max-width: 424.98px) {
+  #videoWrapper video {
+    height: 45%;
+  }
+}
 /* ABOUT */
 #about {
   background-color: #fff;
     height: 90vh;
 }
-
 /* PHOTOGRAPHY */
 #photography {
   background-color: #fff;
     height: 90vh;
 }
-
 .iconBars {
   max-width: 1em;
   height: auto;
 }
-
+/*FOOTER*/
+footer {
+  text-align: center;
+}

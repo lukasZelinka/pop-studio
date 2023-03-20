@@ -20,14 +20,7 @@ import { theme } from "../App";
 
 // const drawerWidth = 240;
 const drawerWidth = "100%";
-const navItems = [
-  "home",
-  "about",
-  "videos",
-  "photography",
-  "magazine",
-  "contact",
-];
+const navItems = ["about", "videos", "photography", "magazine", "contact"];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -45,7 +38,7 @@ function DrawerAppBar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <Link key={item} to={item === "home" ? "/" : `/${item}`}>
+          <Link key={item} to={`/${item}`}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={[
@@ -171,7 +164,7 @@ function DrawerAppBar(props) {
                   }}
                 >
                   {navItems.map((item) => (
-                    <Link key={item} to={item === "home" ? "/" : `/${item}`}>
+                    <Link key={item} to={`/${item}`}>
                       <Button
                         sx={[
                           {

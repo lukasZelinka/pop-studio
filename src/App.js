@@ -42,7 +42,7 @@ class App extends React.Component {
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<Error />} />
           </Routes>
-          <footer>viktor cicko ,2023</footer>
+          <footer>viktor cicko 2023</footer>
         </BrowserRouter>
       </ThemeProvider>
     );

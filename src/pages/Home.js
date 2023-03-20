@@ -7,7 +7,7 @@ class Home extends React.Component {
     return (
       <section id="home">
         <Container maxWidth="lg">
-          <section className="videoSection">
+          <section id="videoWrapper">
             <video muted autoPlay loop controls>
               <source src="danielka.mp4" type="video/mp4" />
             </video>
