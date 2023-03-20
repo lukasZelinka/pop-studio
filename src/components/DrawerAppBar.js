@@ -198,7 +198,7 @@ function DrawerAppBar(props) {
             </div>
             <p className="logoSmallerScreen ">
               {" "}
-              <a href="#home">
+              <a href="/">
                 <img
                   src="../logo192.png"
                   alt="pop studio logo"
