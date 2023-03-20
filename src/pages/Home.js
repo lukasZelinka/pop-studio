@@ -8,17 +8,17 @@ class Home extends React.Component {
       <section id="home">
         <Container maxWidth="lg">
           <section className="videoSection">
-            {/* <video muted autoPlay loop>
+            <video muted autoPlay loop controls>
               <source src="danielka.mp4" type="video/mp4" />
-            </video> */}
-            <iframe
+            </video>
+            {/* <iframe
               title="vimeo-player"
               src="https://player.vimeo.com/video/760313223?h=508d87db54"
               width="100%"
               height="100%"
               frameborder="0"
               allowfullscreen
-            ></iframe>
+            ></iframe> */}
           </section>
         </Container>
       </section>
