@@ -20,7 +20,14 @@ import { theme } from "../App";
 
 // const drawerWidth = 240;
 const drawerWidth = "100%";
-const navItems = ["home", "about", "videos", "photography", "magazine"];
+const navItems = [
+  "home",
+  "about",
+  "videos",
+  "photography",
+  "magazine",
+  "contact",
+];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -142,7 +149,7 @@ function DrawerAppBar(props) {
                     color: "black",
                   }}
                 >
-                  <a href="#home">
+                  <a href="/">
                     <img
                       src="../logo192.png"
                       alt="pop studio logo"

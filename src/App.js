@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./components/Home";
-import { About } from "./components/About";
-import { Error } from "./components/Error";
-import { Videos } from "./components/Videos";
-import { Photography } from "./components/Photography";
-import { Magazine } from "./components/Magazine";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Error } from "./pages/Error";
+import { Videos } from "./pages/Videos";
+import { Photography } from "./pages/Photography";
+import { Magazine } from "./pages/Magazine";
+import { Contact } from "./pages/Contact";
 import DrawerAppBar from "./components/DrawerAppBar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -38,9 +39,10 @@ class App extends React.Component {
             <Route path="photography" element={<Photography />} />
             <Route path="videos" element={<Videos />} />
             <Route path="magazine" element={<Magazine />} />
+            <Route path="contact" element={<Contact />} />
             <Route path="*" element={<Error />} />
           </Routes>
-          <footer>footer</footer>
+          <footer>viktor cicko ,2023</footer>
         </BrowserRouter>
       </ThemeProvider>
     );

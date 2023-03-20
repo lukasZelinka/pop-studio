@@ -110,7 +110,6 @@ a {
   }
 }
 
-
 /* nav-layout-handling */
 @media screen and (max-width: 599.98px) {
 .css-k008qs {
@@ -123,12 +122,26 @@ a {
   }
 }
 
-
-
 /* HOME */
 #home {
   background-color: #fff;
   height: 90vh;
+}
+
+.videoSection {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin-top: 1em;
+}
+
+.videoSection video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ABOUT */
@@ -137,12 +150,11 @@ a {
     height: 90vh;
 }
 
-/* CONTACT */
-#contact {
+/* PHOTOGRAPHY */
+#photography {
   background-color: #fff;
     height: 90vh;
 }
-
 
 .iconBars {
   max-width: 1em;
