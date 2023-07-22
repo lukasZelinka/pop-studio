@@ -9,6 +9,7 @@ import { Photography } from "./pages/Photography";
 import { Magazine } from "./pages/Magazine";
 import { Contact } from "./pages/Contact";
 import DrawerAppBar from "./components/DrawerAppBar";
+import Footer from "./components/Footer"
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 export let theme = createTheme({
@@ -42,7 +43,7 @@ class App extends React.Component {
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<Error />} />
           </Routes>
-          <footer>viktor cicko 2023</footer>
+          <Footer/>
         </BrowserRouter>
       </ThemeProvider>
     );

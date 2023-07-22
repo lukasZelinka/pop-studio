@@ -8,10 +8,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.51;
 }
+
 a {
   text-decoration: none;
- 
+
 }
+
 /* APPBAR */
 /* centering nav elements */
 .flexContainer2 {
@@ -22,29 +24,36 @@ a {
   width: 100%;
   height: 80px;
 }
+
 .flex-nav-logo {
   align-self: center;
   margin-top: 0.5em;
 }
-.flex-nav-icons{
+
+.flex-nav-icons {
   align-self: center;
   margin-top: 0.7em;
   margin-left: 2.5em;
 }
+
 .flex-nav-links {
   align-self: center;
-    margin-top: -0.8em;
+  margin-top: -0.8em;
 }
+
 .css-1viag39 {
   margin-top: -0.5em;
 }
+
 .fa-bars {
   margin-top: 0.4em;
 }
+
 .logoSmallerScreen {
   margin-top: 0.9em;
   margin-right: 0.3em;
 }
+
 /*social icons */
 .wrapper {
   display: inline-flex;
@@ -55,71 +64,85 @@ a {
   height: 10vh;
   margin-top: -9px;
 }
-.wrapper > a{
+
+.wrapper>a {
   padding: 0px 10px;
 }
+
 .wrapper a:nth-child(1) {
   color: #999494;
   cursor: pointer;
   transition: all ease-in-out 150ms;
 }
+
 .wrapper a:nth-child(1):hover {
   margin-top: -10px;
   transform: translate(0, -8);
 }
+
 .wrapper a:nth-child(2) {
   color: #999494;
   cursor: pointer;
   transition: all ease-in-out 150ms;
 }
+
 .wrapper a:nth-child(2):hover {
   margin-top: -10px;
   transform: translate(0, -8);
 }
+
 .wrapper a:nth-child(3) {
   color: #999494;
   cursor: pointer;
   transition: all ease-in-out 150ms;
 }
+
 .wrapper a:nth-child(3):hover {
   margin-top: -10px;
   transform: translate(0, -5);
 }
+
 /* logo handling - smaller/bigger screen */
 @media screen and (max-width: 599.98px) {
-.flexContainer {
+  .flexContainer {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
 }
+
 @media screen and (min-width: 900px) {
   .logoSmallerScreen {
-  display: none;
+    display: none;
   }
 }
+
 /* nav-layout-handling */
 @media screen and (max-width: 599.98px) {
-.css-k008qs {
-  height: 2.3em
+  .css-k008qs {
+    height: 2.3em
+  }
 }
-}
+
 @media screen and (min-width: 600px) {
   .css-k008qs {
     height: 4em
   }
 }
+
 /* HOME */
 #home {
   background-color: #fff;
   height: 90vh;
 }
+
 #videoWrapper {
   position: relative;
   width: 100%;
   height: 80vh;
   margin-top: 1em;
 }
+
 #videoWrapper video {
   position: absolute;
   top: 0;
@@ -128,28 +151,35 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
 /* handtuchova video for mobile */
 @media screen and (max-width: 424.98px) {
   #videoWrapper video {
     height: 45%;
   }
 }
+
 /* ABOUT */
 #about {
   background-color: #fff;
-    height: 90vh;
+  height: 90vh;
 }
+
 /* PHOTOGRAPHY */
 #photography {
   background-color: #fff;
-    height: 90vh;
+  height: 90vh;
 }
+
 .iconBars {
   max-width: 1em;
   height: auto;
 }
+
 /*FOOTER*/
-footer {
+.footer {
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  margin-top: -7vh;
+  padding: 1rem;
 }
